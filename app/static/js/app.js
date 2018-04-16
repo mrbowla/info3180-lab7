@@ -12,6 +12,9 @@ Vue.component('app-header', {
           <li class="nav-item active">
             <router-link class="nav-link" to="/">Home <span class="sr-only">(current)</span></router-link>
           </li>
+          <li class="nav-item active">
+            <router-link class="nav-link" to="/">Form <span class="sr-only"></span></router-link>
+          </li>
         </ul>
       </div>
     </nav>
@@ -33,12 +36,28 @@ const Home = Vue.component('home', {
     <div class="jumbotron">
         <h1>Lab 7</h1>
         <p class="lead">In this lab we will demonstrate VueJS working with Forms and Form Validation from Flask-WTF.</p>
+        
     </div>
    `,
     data: function() {
        return {}
     }
 });
+
+
+const Upload = Vue.component('upload-form', {
+    template:
+     <div class="container">
+        <h2>Upload Form</h2>
+        
+        <div class="upload">
+            <form >
+         </p>
+        </form>
+        </div>
+})
+
+
 
 // Define Routes
 const router = new VueRouter({
